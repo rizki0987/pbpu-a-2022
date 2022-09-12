@@ -1,0 +1,11 @@
+@startuml E-commerce
+' diagram style
+
+' diagram relation
+
+class Store{
+  + deliveryType : DeliveryAPI
+  + void delivery(deliveryType : DeliveryAPI)
+}
+
+@enduml
