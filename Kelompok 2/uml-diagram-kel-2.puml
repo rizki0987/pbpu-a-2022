@@ -12,6 +12,15 @@ interface DeliveryAPI {
     requestPengiriman(String asal, String tujuan)
 }
 
-ECommerce --> DeliveryAPI 
+class JNE {
+    String nama
+    String idEkspedisi
+    String owner
+    tarifPengiriman(Double jarak, Double berat)
+    requestPengiriman(String asal, String tujuan)
+}
+
+ECommerce --> DeliveryAPI
+DeliveryAPI <|-- JNE
 @enduml
 
