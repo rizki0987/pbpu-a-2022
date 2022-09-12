@@ -1,0 +1,17 @@
+@startuml
+class ECommerce {
+    String nama
+    String alamatUtama
+    String owner
+    DeliveryAPI deliveryType
+    delivery(DeliveryAPI deliveryType)
+}
+
+interface DeliveryAPI {
+    tarifPengiriman(Double jarak, Double berat)
+    requestPengiriman(String asal, String tujuan)
+}
+
+ECommerce --> DeliveryAPI 
+@enduml
+
